@@ -1,5 +1,8 @@
+
+///// ### Count-to-6 \\\\\
+
 //#1
-//console.log("HEELO ES6");
+//console.log("HELLO ES6");
 
 //#2 - Template strings
 // console.log(`Hello, ${process.argv[2]}!

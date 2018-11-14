@@ -1,3 +1,5 @@
-Count-to-6 will go through a series of exercises that introduces you to some of the simpler features of ECMAScript 6. This is just for pratice and it includes only the solutions of count-to-6 exercise.
+JavaScripting, Count-to-6 [Simpler features of ECMAScript 6],
+
+This repo will go through a series of exercises that introduces you to concepts. This is just for practice to learn effectively by making use of terminal and git. and it includes only my solutions of various nodeschool conceptual workshops.
 
 For more information check out nodeschool.io
