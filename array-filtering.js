@@ -16,11 +16,15 @@
 //     console.log(`The fruit name has five characters or less.`);
 
 //for-loop
+// let total = 0;
+// let limit = 10;
+// for (var i = 0; i < limit; i++) {
+//    total += i;
+// }
+//    console.log(total);
 
-let total = 0;
-let limit = 10;
-for (var i = 0; i < limit; i++) {
-   total += i;
-}
+//Arrays
+// let pizzaToppings = ["tomato sauce", "cheese", "pepperoni"];
+// console.log(pizzaToppings);
 
-   console.log(total);
+//array-filtering
