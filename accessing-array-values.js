@@ -28,8 +28,12 @@
 // console.log(pizzaToppings);
 
 //array-filtering
-let numbers = [1,2,3,4,5,6,7,8,9,10];
-let filtered = numbers.filter(function evenNumber(number) {
-    return number % 2 === 0;
-});
-console.log(filtered);
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// let filtered = numbers.filter(function evenNumber(number) {
+//     return number % 2 === 0;
+// });
+// console.log(filtered);
+
+//accessing array values
+let food = ['apple', 'pizza', 'pear'];
+console.log(food[1]);
