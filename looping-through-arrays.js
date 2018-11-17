@@ -35,5 +35,13 @@
 // console.log(filtered);
 
 //accessing array values
-let food = ['apple', 'pizza', 'pear'];
-console.log(food[1]);
+// let food = ['apple', 'pizza', 'pear'];
+// console.log(food[1]);
+
+//looping-through-arrays.js
+var pets = ['cat', 'dog', 'rat'];
+for (var i = 0; i < pets.length; i++){
+    pets[i] = pets[i] + 's';
+}
+
+console.log(pets);
