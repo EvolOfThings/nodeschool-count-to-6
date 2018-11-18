@@ -39,9 +39,49 @@
 // console.log(food[1]);
 
 //looping-through-arrays.js
-var pets = ['cat', 'dog', 'rat'];
-for (var i = 0; i < pets.length; i++){
-    pets[i] = pets[i] + 's';
-}
+// var pets = ['cat', 'dog', 'rat'];
+// for (var i = 0; i < pets.length; i++){
+//     pets[i] = pets[i] + 's';
+// }
+// console.log(pets);
 
-console.log(pets);
+//Objects
+// let pizza = {
+//     toppings: ['cheese', 'sauce', 'pepperoni'],
+//     crust: 'deep dish',
+//     serves: 2
+// };
+// console.log(pizza);
+
+//Object-properties
+let food = {
+    types: 'only pizza'
+};
+
+console.log(food.types);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
