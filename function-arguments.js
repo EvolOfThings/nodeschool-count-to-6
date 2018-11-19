@@ -54,13 +54,19 @@
 // console.log(pizza);
 
 //Object-properties
-let food = {
-    types: 'only pizza'
-};
+// let food = {
+//     types: 'only pizza'
+// };
 
-console.log(food.types);
+// console.log(food.types);
 
+//Functions
+// const eat = (food) => food + ' tasted really good.';
+// console.log(eat("bananas"));
 
+//Functions-arguments
+const math = (arg1, arg2, arg3) => arg2 * arg3 + arg1;
+console.log(math(53, 61, 67));
 
 
 
