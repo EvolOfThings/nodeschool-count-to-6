@@ -26,8 +26,15 @@
     // foot.kick();
 
 //5 Destructuring
+//destructuring array and assigning it to object
 //[userId, username, email, age, firstName, lastName];
-let userArray = process.argv.slice(2);
-let userObject = {};
-[, userObject.username, userObject.email] = userArray; //excluding first cell value
-console.log(userObject);
+// let userArray = process.argv.slice(2);
+// let userObject = {};
+// [, userObject.username, userObject.email] = userArray; //excluding first cell value
+// console.log(userObject);
+
+//6 Spread
+//let numbers = process.argv[2];
+let numbers = process.argv.slice(2);
+let min = Math.min(...numbers);
+console.log(`The minimum of [${numbers}] is ${min}`);
