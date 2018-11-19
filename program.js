@@ -24,3 +24,10 @@
     //     }
     // };
     // foot.kick();
+
+//5 Destructuring
+//[userId, username, email, age, firstName, lastName];
+let userArray = process.argv.slice(2);
+let userObject = {};
+[, userObject.username, userObject.email] = userArray; //excluding first cell value
+console.log(userObject);
