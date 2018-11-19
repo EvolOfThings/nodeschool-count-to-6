@@ -40,9 +40,34 @@
 // console.log(`The minimum of [${numbers}] is ${min}`);
 
 //7 Rest
-module.exports = function average (...args) {
-    let length = args.length;
-    //console.log(length);
-    let sum = args.reduce((last, prev) => last + prev);
-    return sum / length;
+// module.exports = function average (...args) {
+//     let length = args.length;
+//     //console.log(length);
+//     let sum = args.reduce((last, prev) => last + prev);
+//     return sum / length;
+// };
+
+//8 Default arguments
+module.exports = function midpoint(l = 0, u = 1) {
+        return (l + u) / 2;
 };
+
+
+//module.exports = (x = 0, y = 1) => (x + y) / 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
