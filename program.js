@@ -35,6 +35,14 @@
 
 //6 Spread
 //let numbers = process.argv[2];
-let numbers = process.argv.slice(2);
-let min = Math.min(...numbers);
-console.log(`The minimum of [${numbers}] is ${min}`);
+// let numbers = process.argv.slice(2);
+// let min = Math.min(...numbers);
+// console.log(`The minimum of [${numbers}] is ${min}`);
+
+//7 Rest
+module.exports = function average (...args) {
+    let length = args.length;
+    //console.log(length);
+    let sum = args.reduce((last, prev) => last + prev);
+    return sum / length;
+};
