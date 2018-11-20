@@ -48,14 +48,20 @@
 // };
 
 //8 Default arguments
-module.exports = function midpoint(l = 0, u = 1) {
-        return (l + u) / 2;
-};
-
-
+// module.exports = function midpoint(l = 0, u = 1) {
+//         return (l + u) / 2;
+// };
+//or
 //module.exports = (x = 0, y = 1) => (x + y) / 2;
 
-
+//9 Default arguments part 2
+module.exports = (str, n = str.length) => {
+    let exclaim = '!';
+    return str + exclaim.repeat(n);
+};
+//OR
+//    module.exports =
+        (string, bangs = string.length) => string + "!".repeat(bangs);
 
 
 
