@@ -55,13 +55,63 @@
 //module.exports = (x = 0, y = 1) => (x + y) / 2;
 
 //9 Default arguments part 2
-module.exports = (str, n = str.length) => {
-    let exclaim = '!';
-    return str + exclaim.repeat(n);
-};
+// module.exports = (str, n = str.length) => {
+//     let exclaim = '!';
+//     return str + exclaim.repeat(n);
+// };
 //OR
 //    module.exports =
-        (string, bangs = string.length) => string + "!".repeat(bangs);
+//        (string, bangs = string.length) => string + "!".repeat(bangs);
+
+//10 TAGGED TEMPLATE STRINGS
+    // console.log(html`<b>${process.argv[2]} says</b>: "${process.argv[3]}"`);
+
+    // function html(strings, ...values) {
+    //     let escape = ;
+    //     // what goes here?
+    //     return escapedS;
+    // }
+
+
+
+
+
+////////////    FUNCTIONAL JAVASCRIPT    \\\\\\\\\\\\\\\\\\\\\\\
+
+//1
+// const upperCaser = (string) => string.toUpperCase();
+// module.exports = upperCaser;
+
+//2 Higher Order functions
+const repeat = (operation, num) => {
+    for (let i = 0; i < num; i++) {
+        operation();
+    }
+}
+//OR
+    // function repeat(operation, num) {
+    //   if (num <= 0) return
+    //   operation()
+    //   return repeat(operation, --num)
+    // }
+module.exports = repeat;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
