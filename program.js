@@ -83,20 +83,24 @@
 // module.exports = upperCaser;
 
 //2 Higher Order functions
-const repeat = (operation, num) => {
-    for (let i = 0; i < num; i++) {
-        operation();
-    }
+// const repeat = (operation, num) => {
+//     for (let i = 0; i < num; i++) {
+//         operation();
+//     }
+// }
+// //OR
+//     // function repeat(operation, num) {
+//     //   if (num <= 0) return
+//     //   operation()
+//     //   return repeat(operation, --num)
+//     // }
+// module.exports = repeat;
+
+//3 Map
+function doubleAll(numbers) {
+    return numbers.map(value => value * 2);
 }
-//OR
-    // function repeat(operation, num) {
-    //   if (num <= 0) return
-    //   operation()
-    //   return repeat(operation, --num)
-    // }
-module.exports = repeat;
-
-
+    module.exports = doubleAll
 
 
 
