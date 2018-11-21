@@ -97,11 +97,17 @@
 // module.exports = repeat;
 
 //3 Map
-function doubleAll(numbers) {
-    return numbers.map(value => value * 2);
-}
-    module.exports = doubleAll
+// function doubleAll(numbers) {
+//     return numbers.map(value => value * 2);
+// }
+//     module.exports = doubleAll
 
+//4 Filter
+function getShortMessages (messages) {
+    return messages.filter(each => each.message.length < 50)
+                    .map(msg => msg.message);
+}
+module.exports = getShortMessages
 
 
 
