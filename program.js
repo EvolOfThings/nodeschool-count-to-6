@@ -103,15 +103,26 @@
 //     module.exports = doubleAll
 
 //4 Filter
-function getShortMessages (messages) {
-    return messages.filter(each => each.message.length < 50)
-                    .map(msg => msg.message);
-}
-module.exports = getShortMessages
+// function getShortMessages (messages) {
+//     return messages.filter(each => each.message.length < 50)
+//                     .map(msg => msg.message);
+// }
+// module.exports = getShortMessages
 
+//5 Every Some
 
+function checkUsersValid(goodUsers) {
+      return function allUsersValid(submittedUsers) {
+        return submittedUsers.every(((submittedUser) => {
+            return goodUsers.some((goodUser) => {
+                return goodUser.id === submittedUser.id;
+            })
+        }))
+        array1.every(checkUsersValid);
+      };
+    }
 
-
+    module.exports = checkUsersValid
 
 
 
