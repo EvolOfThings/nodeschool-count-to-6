@@ -110,19 +110,33 @@
 // module.exports = getShortMessages
 
 //5 Every Some
+// function checkUsersValid(goodUsers) {
+//       return function allUsersValid(submittedUsers) {
+//         return submittedUsers.every(((submittedUser) => {
+//             return goodUsers.some((goodUser) => {
+//                 return goodUser.id === submittedUser.id;
+//             })
+//         }))
+//         array1.every(checkUsersValid);
+//       };
+//     }
+//     module.exports = checkUsersValid
 
-function checkUsersValid(goodUsers) {
-      return function allUsersValid(submittedUsers) {
-        return submittedUsers.every(((submittedUser) => {
-            return goodUsers.some((goodUser) => {
-                return goodUser.id === submittedUser.id;
-            })
-        }))
-        array1.every(checkUsersValid);
-      };
-    }
-
-    module.exports = checkUsersValid
+//6 Reduce
+   function countWords(arr) {
+    return  arr.reduce((allWords, word) => {
+        allWords[word] = ++allWords[word] || 1;
+                    //OR\\\
+            // if (word in allWords) {
+            //     allWords[word]++;
+            // }
+            // else {
+            //     allWords[word] = 1;
+            // }
+            return allWords;
+        }, {});
+}
+    module.exports = countWords
 
 
 
