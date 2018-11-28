@@ -123,20 +123,29 @@
 //     module.exports = checkUsersValid
 
 //6 Reduce
-   function countWords(arr) {
-    return  arr.reduce((allWords, word) => {
-        allWords[word] = ++allWords[word] || 1;
-                    //OR\\\
-            // if (word in allWords) {
-            //     allWords[word]++;
-            // }
-            // else {
-            //     allWords[word] = 1;
-            // }
-            return allWords;
-        }, {});
+//    function countWords(arr) {
+//     return  arr.reduce((allWords, word) => {
+//         allWords[word] = ++allWords[word] || 1;
+//                     //OR\\\
+//             // if (word in allWords) {
+//             //     allWords[word]++;
+//             // }
+//             // else {
+//             //     allWords[word] = 1;
+//             // }
+//             return allWords;
+//         }, {});
+// }
+//     module.exports = countWords
+
+//7 Recursion
+
+//8 Call
+
+//map with reduce
+module.exports = function arrayMap(arr, fn) {
+     map(arr).reduce(item => item + 2)
 }
-    module.exports = countWords
 
 
 
